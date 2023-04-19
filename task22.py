@@ -8,11 +8,8 @@ n = int(input("Введите кол-во элементов первого мн
 m = int(input("Введите кол-во элементов второго множества: "))
 array_n = set()
 array_m = set()
-sets = set()
 for i in range(n):
     array_n.add(int(input(f"Введите {i+1} элемент первого множества: ")))
 for j in range(m):
     array_m.add(int(input(f"Введите {j+1} элемент второго множества: ")))
-lst = list(sets.union(array_n, array_m))
-lst_sort = sorted(lst)
-print(lst_sort)
+print(sorted(array_n.intersection(array_m)))
